@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Draft Age Calculator – Am I Eligible for Military Draft?',
+  title: 'Draft Age Calculator ??Am I Eligible for Military Draft?',
   description: 'Calculate your draft age and eligibility for selective service. Check military draft requirements and registration deadlines across different countries.',
   keywords: [
     'draft age calculator',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL('https://draft-age-calculator.vercel.app'),
   openGraph: {
-    title: 'Draft Age Calculator – Am I Eligible for Military Draft?',
+    title: 'Draft Age Calculator ??Am I Eligible for Military Draft?',
     description: 'Calculate your draft age and eligibility for selective service. Check military draft requirements and registration deadlines.',
     url: 'https://draft-age-calculator.vercel.app',
     siteName: 'Draft Age Calculator',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Draft Age Calculator – Am I Eligible for Military Draft?',
+    title: 'Draft Age Calculator ??Am I Eligible for Military Draft?',
     description: 'Calculate your draft age and eligibility for selective service.',
   },
   robots: {
@@ -48,6 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="hsjncRi9cl3tz3Otd6SJKurSt_V1bZ0AKO-bdWIGeHM" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Draft Age Calculator" />
