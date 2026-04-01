@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     'selective service registration',
     'military draft requirements',
   ],
-  metadataBase: new URL('https://draft-age-calculator.vercel.app'),
+  metadataBase: new URL('https://military-draft-calculator.vercel.app'),
   openGraph: {
     title: 'Draft Age Calculator ??Am I Eligible for Military Draft?',
     description: 'Calculate your draft age and eligibility for selective service. Check military draft requirements and registration deadlines.',
-    url: 'https://draft-age-calculator.vercel.app',
+    url: 'https://military-draft-calculator.vercel.app',
     siteName: 'Draft Age Calculator',
     type: 'website',
     locale: 'en_US',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     googleBot: 'index, follow',
   },
   alternates: {
-    canonical: 'https://draft-age-calculator.vercel.app',
+    canonical: 'https://military-draft-calculator.vercel.app',
   },
 };
 

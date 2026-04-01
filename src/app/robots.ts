@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: [],
     },
-    sitemap: 'https://draft-age-calculator.vercel.app/sitemap.xml',
+    sitemap: 'https://military-draft-calculator.vercel.app/sitemap.xml',
   };
 }

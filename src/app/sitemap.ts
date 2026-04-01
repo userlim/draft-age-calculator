@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://draft-age-calculator.vercel.app',
+      url: 'https://military-draft-calculator.vercel.app',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
