@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Draft Age Calculator ??Am I Eligible for Military Draft?',
-  description: 'Calculate your draft age and eligibility for selective service. Check military draft requirements and registration deadlines across different countries.',
+  title: 'Draft Age Calculator (Free, 2026) – Check Military Service Eligibility',
+  description: 'Check your military draft eligibility in seconds. Free 2026 draft age calculator with US Selective Service info and international conscription data.',
   keywords: [
     'draft age calculator',
     'selective service age',
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL('https://military-draft-calculator.vercel.app'),
   openGraph: {
-    title: 'Draft Age Calculator ??Am I Eligible for Military Draft?',
-    description: 'Calculate your draft age and eligibility for selective service. Check military draft requirements and registration deadlines.',
+    title: 'Draft Age Calculator (Free, 2026) – Check Military Service Eligibility',
+    description: 'Check your military draft eligibility in seconds. Free 2026 draft age calculator with US Selective Service info and international conscription data.',
     url: 'https://military-draft-calculator.vercel.app',
     siteName: 'Draft Age Calculator',
     type: 'website',
@@ -80,6 +80,15 @@ export default function RootLayout({
       <body>
         {children}
         <footer className="border-t border-gray-200 py-4 text-center text-sm text-gray-400">
+          
+            <div className="flex flex-wrap justify-center gap-4 mb-3">
+              <span className="text-xs text-gray-400 font-semibold">Related Free Tools:</span>
+                <a href="https://bmi-calculator-free.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">BMI Calculator</a>
+                <a href="https://take-home-pay-calculator-sandy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Salary Tax Calculator</a>
+                <a href="https://timezone-converter-ashy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Timezone Converter</a>
+                <a href="https://meettime-tawny.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">MeetTime</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">UtiliCalc</a>
+            </div>
           <div className="flex flex-wrap justify-center gap-4 mb-3">
             <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800 text-xs">Privacy Policy</a>
             <a href="/terms" className="text-blue-600 hover:text-blue-800 text-xs">Terms of Service</a>

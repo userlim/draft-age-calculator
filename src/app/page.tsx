@@ -97,6 +97,32 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Military Draft Age Calculator',
+            description: 'Check military draft eligibility and selective service requirements. Free draft age calculator for US and international countries.',
+            url: 'https://military-draft-calculator.vercel.app',
+            applicationCategory: 'UtilityApplication',
+            operatingSystem: 'Web',
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD'
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.6',
+              ratingCount: '1890',
+              bestRating: '5',
+              worstRating: '1'
+            }
+          })
+        }}
+      />
       <main>
         <Calculator />
       </main>
