@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Draft Age Calculator (Free, 2026) – Check Military Service Eligibility',
@@ -62,11 +63,8 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/favicon.svg" />
 
         {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-P04TH8XJJ9"
-        ></script>
-        <script
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-P04TH8XJJ9" strategy="lazyOnload" />
+        <Script id="gtag-init" strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
