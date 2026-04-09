@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy - Draft Age Calculator',
   description: 'Privacy Policy for Draft Age Calculator. Learn how we collect, use, and protect your information.',
+  robots: { index: false, follow: true },
 }
 
 export default function PrivacyPolicy() {

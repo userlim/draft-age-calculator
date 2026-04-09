@@ -124,6 +124,32 @@ export default function Home() {
       />
       <main>
         <Calculator />
+      
+      {/* Extended Content Section for SEO depth */}
+      <section id="content-depth-section" className="mt-12 max-w-3xl mx-auto px-4">
+        <h2 className="text-2xl font-bold mb-6">Complete Guide</h2>
+        
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Understanding the US Selective Service System</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The Selective Service System is an independent agency within the Executive Branch of the US federal government. Its primary purpose is to maintain a database of men who could be drafted in the event of a national emergency requiring military conscription. While the US has maintained an all-volunteer military since 1973, Selective Service registration remains a legal requirement.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Who Must Register and When</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `All male US citizens and male immigrants (documented and undocumented) must register with the Selective Service within 30 days of their 18th birthday. Registration is required for men aged 18 through 25. After age 26, you can no longer register, and failure to have registered can have long-term consequences. Transgender individuals should follow the registration requirements based on their sex assigned at birth.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Consequences of Not Registering</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Failure to register with the Selective Service carries significant penalties. These include ineligibility for federal student financial aid (Pell Grants, federal student loans, work-study), ineligibility for federal job training under the Workforce Innovation and Opportunity Act, and ineligibility for federal employment. Additionally, many states tie Selective Service registration to driver's license eligibility and state student aid. Non-registration is technically a felony punishable by up to 5 years in prison and a $250,000 fine, though prosecutions are extremely rare.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">History of the US Military Draft</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The United States has used military conscription during several major conflicts. The first federal draft occurred during the Civil War in 1863. Subsequent drafts were implemented for World War I (1917-1918), World War II (1940-1947), and the Vietnam War era (1964-1973). The draft lottery system was used during Vietnam, randomly selecting birthdates to determine call-up order. Public opposition to the Vietnam draft was a major factor in the transition to an all-volunteer force.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Current Draft Debates and Proposed Changes</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Several proposals have been made to reform or abolish the Selective Service System. The National Commission on Military, National, and Public Service recommended in 2020 that registration be extended to include women. Bills have been introduced in Congress both to expand registration to women and to eliminate the requirement entirely. As of 2026, the system remains unchanged, with registration required only for males.` }} />
+            </div>
+      </section>
       </main>
     </>
   );
