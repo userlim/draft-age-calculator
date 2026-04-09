@@ -2,9 +2,8 @@ import { Metadata } from 'next';
 import Calculator from './calculator';
 
 export const metadata: Metadata = {
-  title: 'Draft Age Calculator – Check Military Draft Eligibility',
-  description:
-    'Calculate your draft age and check if you are eligible for military selective service. Includes information for US and international countries with mandatory military service.',
+  title: 'Free Draft Age Calculator (2026) – Check Military Selective Service Status',
+  description: 'Check your military draft eligibility instantly. Free draft age calculator shows Selective Service registration status, deadlines, and requirements. No signup needed.',
   keywords: [
     'draft age calculator',
     'selective service age',
