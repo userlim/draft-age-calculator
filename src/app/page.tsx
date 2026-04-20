@@ -126,48 +126,44 @@ export default function Home() {
         <Calculator />
       
       {/* Extended Content Section for SEO depth */}
-      <section id="content-depth-section" className="mt-12 max-w-3xl mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-6">Complete Guide</h2>
+      <section id="content-depth-section" className="mt-20 max-w-3xl mx-auto px-6 relative z-[1]">
+        <h2 className="text-h2 mb-6 text-[var(--text-primary)]">Complete Guide</h2>
         
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Understanding the US Selective Service System</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The Selective Service System is an independent agency within the Executive Branch of the US federal government. Its primary purpose is to maintain a database of men who could be drafted in the event of a national emergency requiring military conscription. While the US has maintained an all-volunteer military since 1973, Selective Service registration remains a legal requirement.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Understanding the US Selective Service System</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The Selective Service System is an independent agency within the Executive Branch of the US federal government. Its primary purpose is to maintain a database of men who could be drafted in the event of a national emergency requiring military conscription. While the US has maintained an all-volunteer military since 1973, Selective Service registration remains a legal requirement.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Who Must Register and When</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `All male US citizens and male immigrants (documented and undocumented) must register with the Selective Service within 30 days of their 18th birthday. Registration is required for men aged 18 through 25. After age 26, you can no longer register, and failure to have registered can have long-term consequences. Transgender individuals should follow the registration requirements based on their sex assigned at birth.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Who Must Register and When</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `All male US citizens and male immigrants (documented and undocumented) must register with the Selective Service within 30 days of their 18th birthday. Registration is required for men aged 18 through 25. After age 26, you can no longer register, and failure to have registered can have long-term consequences. Transgender individuals should follow the registration requirements based on their sex assigned at birth.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Consequences of Not Registering</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Failure to register with the Selective Service carries significant penalties. These include ineligibility for federal student financial aid (Pell Grants, federal student loans, work-study), ineligibility for federal job training under the Workforce Innovation and Opportunity Act, and ineligibility for federal employment. Additionally, many states tie Selective Service registration to driver's license eligibility and state student aid. Non-registration is technically a felony punishable by up to 5 years in prison and a $250,000 fine, though prosecutions are extremely rare.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Consequences of Not Registering</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Failure to register with the Selective Service carries significant penalties. These include ineligibility for federal student financial aid (Pell Grants, federal student loans, work-study), ineligibility for federal job training under the Workforce Innovation and Opportunity Act, and ineligibility for federal employment. Additionally, many states tie Selective Service registration to driver's license eligibility and state student aid. Non-registration is technically a felony punishable by up to 5 years in prison and a $250,000 fine, though prosecutions are extremely rare.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">History of the US Military Draft</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The United States has used military conscription during several major conflicts. The first federal draft occurred during the Civil War in 1863. Subsequent drafts were implemented for World War I (1917-1918), World War II (1940-1947), and the Vietnam War era (1964-1973). The draft lottery system was used during Vietnam, randomly selecting birthdates to determine call-up order. Public opposition to the Vietnam draft was a major factor in the transition to an all-volunteer force.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">History of the US Military Draft</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The United States has used military conscription during several major conflicts. The first federal draft occurred during the Civil War in 1863. Subsequent drafts were implemented for World War I (1917-1918), World War II (1940-1947), and the Vietnam War era (1964-1973). The draft lottery system was used during Vietnam, randomly selecting birthdates to determine call-up order. Public opposition to the Vietnam draft was a major factor in the transition to an all-volunteer force.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Current Draft Debates and Proposed Changes</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Several proposals have been made to reform or abolish the Selective Service System. The National Commission on Military, National, and Public Service recommended in 2020 that registration be extended to include women. Bills have been introduced in Congress both to expand registration to women and to eliminate the requirement entirely. As of 2026, the system remains unchanged, with registration required only for males.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Current Draft Debates and Proposed Changes</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Several proposals have been made to reform or abolish the Selective Service System. The National Commission on Military, National, and Public Service recommended in 2020 that registration be extended to include women. Bills have been introduced in Congress both to expand registration to women and to eliminate the requirement entirely. As of 2026, the system remains unchanged, with registration required only for males.` }} />
             </div>
       </section>
       </main>
     
       {/* Keyword-Optimized Content */}
-      <section id="keyword-seo-section" className="mt-8 max-w-3xl mx-auto px-4">
-        <p className="text-sm text-gray-400 leading-relaxed">
+      <section id="keyword-seo-section" className="mt-12 max-w-3xl mx-auto px-6 pb-16 relative z-[1]">
+        <p className="text-sm text-[var(--text-muted)] leading-relaxed">
           Check your selective service status with our draft age calculator. Updated for 2026 with the latest automatic draft registration rules. Find out your military draft eligibility, learn about draft age requirements, and use our draft eligibility checker for instant results.
         </p>
 <div className="mt-3 flex flex-wrap gap-2">
-          <a href="https://take-home-pay-calculator-sandy.vercel.app" className="text-xs text-blue-400 hover:underline">Salary Tax Calculator →</a>
-          <a href="https://bmi-calculator-free.vercel.app" className="text-xs text-blue-400 hover:underline">BMI Calculator →</a>
-          <a href="https://meettime-tawny.vercel.app" className="text-xs text-blue-400 hover:underline">MeetTime →</a>
+          <a href="https://take-home-pay-calculator-sandy.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">Salary Tax Calculator →</a>
+          <a href="https://bmi-calculator-free.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">BMI Calculator →</a>
+          <a href="https://meettime-tawny.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">MeetTime →</a>
         </div>
 
       </section>
       </>
   );
-  other: {
-    'article:published_time': '2025-01-15T00:00:00Z',
-    'article:modified_time': '2026-04-10T00:00:00Z',
-  },
 }

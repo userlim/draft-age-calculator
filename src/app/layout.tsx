@@ -1,54 +1,39 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import type { Metadata } from 'next'
+import './globals.css'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Draft Age Calculator (Free, 2026) – Check Military Service Eligibility',
   description: 'Check your military draft eligibility in seconds. Free 2026 draft age calculator with US Selective Service info and international conscription data.',
-  keywords:
-    'draft age calculator, military draft age, selective service age, am i eligible for the draft, military draft 2026, draft age limit, selective service registration, us military draft calculator, draft lottery calculator, will there be a draft, automatic draft registration, draft age requirements, selective service status check, military conscription age, draft eligibility checker',
-  keywords: [
-    'draft age calculator',
-    'selective service age',
-    'military draft age',
-    'am I draft eligible',
-    'draft eligibility',
-    'selective service registration',
-    'military draft requirements',
-  ],
+  keywords: 'draft age calculator, military draft age, selective service age, am i eligible for the draft, military draft 2026, draft age limit, selective service registration, us military draft calculator, draft lottery calculator, will there be a draft, automatic draft registration, draft age requirements, selective service status check, military conscription age, draft eligibility checker',
   metadataBase: new URL('https://military-draft-calculator.vercel.app'),
   openGraph: {
     title: 'Draft Age Calculator (Free, 2026) – Check Military Service Eligibility',
     description: 'Check your military draft eligibility in seconds. Free 2026 draft age calculator with US Selective Service info and international conscription data.',
-  keywords:
-    'draft age calculator, military draft age, selective service age, am i eligible for the draft, military draft 2026, draft age limit, selective service registration, us military draft calculator, draft lottery calculator, will there be a draft, automatic draft registration, draft age requirements, selective service status check, military conscription age, draft eligibility checker',
     url: 'https://military-draft-calculator.vercel.app',
     siteName: 'Draft Age Calculator',
-    type: 'website',
     locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Draft Age Calculator ??Am I Eligible for Military Draft?',
-    description: 'Calculate your draft age and eligibility for selective service.',
-  keywords:
-    'draft age calculator, military draft age, selective service age, am i eligible for the draft, military draft 2026, draft age limit, selective service registration, us military draft calculator, draft lottery calculator, will there be a draft, automatic draft registration, draft age requirements, selective service status check, military conscription age, draft eligibility checker',
+    title: 'Draft Age Calculator',
+    description: 'Check your military draft eligibility in seconds. Free 2026 draft age calculator with US Selective Service info and international conscription data.',
   },
   robots: {
     index: true,
     follow: true,
-    'max-image-preview': 'large',
+    'max-image-preview': 'large' as const,
     'max-snippet': -1,
     'max-video-preview': -1,
-    googleBot: 'index, follow',
   },
+  icons: { icon: '/favicon.svg' },
   alternates: {
     canonical: 'https://military-draft-calculator.vercel.app',
     languages: {
       'en': 'https://military-draft-calculator.vercel.app',
       'x-default': 'https://military-draft-calculator.vercel.app',
     },
-  },
   },
 };
 
@@ -105,19 +90,19 @@ export default function RootLayout({
 </head>
       <body>
         {children}
-        <footer className="border-t border-white/5 py-6 text-center text-sm text-gray-500 bg-black/20 backdrop-blur-sm">
+        <footer className="border-t border-white/5 py-6 text-center text-sm text-[var(--text-secondary)] bg-black/20 backdrop-blur-sm">
           
             <div className="flex flex-wrap justify-center gap-4 mb-3">
-              <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Related Free Tools:</span>
-                <a href="https://bmi-calculator-free.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Free BMI Calculator</a>
-                <a href="https://take-home-pay-calculator-sandy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Take-Home Pay Calculator</a>
-                <a href="https://timezone-converter-ashy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">World Timezone Converter</a>
-                <a href="https://meettime-tawny.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Meeting Time Zone Scheduler</a>
-                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
+              <span className="text-xs text-[var(--text-secondary)] font-semibold uppercase tracking-wider">Related Free Tools:</span>
+                <a href="https://bmi-calculator-free.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Free BMI Calculator</a>
+                <a href="https://take-home-pay-calculator-sandy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Take-Home Pay Calculator</a>
+                <a href="https://timezone-converter-ashy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">World Timezone Converter</a>
+                <a href="https://meettime-tawny.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Meeting Time Zone Scheduler</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
             </div>
           <div className="flex flex-wrap justify-center gap-4 mb-3">
-            <a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-xs">Privacy Policy</a>
-            <a href="/terms" className="text-gray-400 hover:text-white transition-colors text-xs">Terms of Service</a>
+            <a href="/privacy-policy" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Privacy Policy</a>
+            <a href="/terms" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Terms of Service</a>
           </div>
           &copy; 2026 Military Draft Calculator. All rights reserved.
         </footer>
