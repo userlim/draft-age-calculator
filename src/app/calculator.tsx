@@ -986,8 +986,8 @@ export default function Calculator() {
               onClick={() => setLanguage(code)}
               className={`px-3 py-2 rounded-lg font-medium transition-all ${
                 language === code
-                  ? 'bg-primary-600 text-[#191F28] shadow-lg'
-                  : 'bg-white/[0.03] text-[#8B95A1] border border-[#F2F4F6] hover:border-primary-300'
+                  ? 'bg-primary-600 text-white shadow-lg'
+                  : 'bg-white text-gray-700 border border-gray-200 hover:border-primary-300'
               }`}
               title={name}
             >
@@ -1001,7 +1001,7 @@ export default function Calculator() {
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
             {t.title}
           </h1>
-          <p className="text-[#8B95A1] text-lg md:text-xl">{t.subtitle}</p>
+          <p className="text-gray-600 text-lg md:text-xl">{t.subtitle}</p>
         </div>
 
         {/* Calculator Card */}
@@ -1009,7 +1009,7 @@ export default function Calculator() {
           <div className="space-y-6">
             {/* Date of Birth */}
             <div>
-              <label className="block text-sm font-semibold text-[#8B95A1] mb-2">
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
                 {t.dateOfBirth}
               </label>
               <input
@@ -1022,7 +1022,7 @@ export default function Calculator() {
 
             {/* Gender */}
             <div>
-              <label className="block text-sm font-semibold text-[#8B95A1] mb-2">
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
                 {t.gender}
               </label>
               <select value={gender} onChange={(e) => setGender(e.target.value)} className="select-field">
@@ -1035,7 +1035,7 @@ export default function Calculator() {
 
             {/* Country */}
             <div>
-              <label className="block text-sm font-semibold text-[#8B95A1] mb-2">
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
                 {t.country}
               </label>
               <select value={country} onChange={(e) => setCountry(e.target.value)} className="select-field">
@@ -1062,12 +1062,12 @@ export default function Calculator() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               {/* Current Age */}
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-lg">
-                <p className="text-sm text-[#8B95A1] font-medium">{t.currentAge}</p>
+                <p className="text-sm text-gray-600 font-medium">{t.currentAge}</p>
                 <p className="text-3xl font-bold text-blue-900">
                   {results.years}
                   <span className="text-lg ml-2">{t.years}</span>
                 </p>
-                <p className="text-sm text-[#4E5968] mt-1">
+                <p className="text-sm text-gray-500 mt-1">
                   {results.months} {t.months}
                 </p>
               </div>
@@ -1080,7 +1080,7 @@ export default function Calculator() {
                     : 'bg-gradient-to-br from-gray-50 to-gray-100'
                 }`}
               >
-                <p className="text-sm text-[#8B95A1] font-medium">{t.draftEligible}</p>
+                <p className="text-sm text-gray-600 font-medium">{t.draftEligible}</p>
                 <div className="flex items-center gap-2 mt-2">
                   <div
                     className={`w-4 h-4 rounded-full ${
@@ -1096,22 +1096,22 @@ export default function Calculator() {
 
             {/* Registration Status (US Only) */}
             {country === 'us' && (
-              <div className="bg-yellow-500/10 border-l-4 border-yellow-400 p-4 rounded mb-6">
-                <p className="font-semibold text-gray-200 mb-2">
+              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded mb-6">
+                <p className="font-semibold text-gray-800 mb-2">
                   {t.selectiveServiceStatus}
                 </p>
-                <p className="text-sm text-[#8B95A1]">
+                <p className="text-sm text-gray-700">
                   {results.registrationRequired ? (
                     <>
                       <span className="font-semibold">{t.requiresRegistration}</span>
                       <br />
                       {t.mustRegisterWithin}
                       <br />
-                      <span className="text-xs text-[#8B95A1] mt-2 block">
+                      <span className="text-xs text-gray-600 mt-2 block">
                         {t.registrationDeadline}: {results.registrationDeadline}
                       </span>
                       {results.daysUntilDeadline > 0 && (
-                        <span className="text-xs text-[#8B95A1] block">
+                        <span className="text-xs text-gray-600 block">
                           {results.daysUntilDeadline} {t.daysRemaining}
                         </span>
                       )}
@@ -1130,8 +1130,8 @@ export default function Calculator() {
 
             {/* Service Information */}
             <div className="bg-primary-50 border-l-4 border-primary-600 p-4 rounded mb-6">
-              <p className="font-semibold text-gray-200 mb-4">{t.serviceInfo}</p>
-              <div className="space-y-3 text-sm text-[#8B95A1]">
+              <p className="font-semibold text-gray-800 mb-4">{t.serviceInfo}</p>
+              <div className="space-y-3 text-sm text-gray-700">
                 <div>
                   <p className="font-medium">{t.serviceLength}</p>
                   <p>{results.info.serviceLength}</p>
@@ -1147,8 +1147,8 @@ export default function Calculator() {
 
             {/* Years Until/Since Eligible */}
             {results.yearsUntilEligible > 0 && (
-              <div className="bg-blue-500/10 p-4 rounded mb-6 text-center">
-                <p className="text-sm text-[#8B95A1] font-medium">
+              <div className="bg-blue-50 p-4 rounded mb-6 text-center">
+                <p className="text-sm text-gray-600 font-medium">
                   {t.yearsUntilEligible}
                 </p>
                 <p className="text-3xl font-bold text-blue-900">
@@ -1158,8 +1158,8 @@ export default function Calculator() {
             )}
 
             {results.yearsSinceEligible > 0 && (
-              <div className="bg-green-500/10 p-4 rounded mb-6 text-center">
-                <p className="text-sm text-[#8B95A1] font-medium">
+              <div className="bg-green-50 p-4 rounded mb-6 text-center">
+                <p className="text-sm text-gray-600 font-medium">
                   {t.yearsSinceEligible}
                 </p>
                 <p className="text-3xl font-bold text-green-900">
@@ -1169,11 +1169,11 @@ export default function Calculator() {
             )}
 
             {/* Country-Specific Info */}
-            <div className="bg-indigo-500/10 p-4 rounded">
-              <p className="font-semibold text-gray-200 mb-2">
+            <div className="bg-indigo-50 p-4 rounded">
+              <p className="font-semibold text-gray-800 mb-2">
                 {t.countrySpecificInfo}
               </p>
-              <p className="text-sm text-[#8B95A1] leading-relaxed">
+              <p className="text-sm text-gray-700 leading-relaxed">
                 {results.info.description}
               </p>
             </div>
@@ -1181,9 +1181,9 @@ export default function Calculator() {
         )}
 
         {/* Disclaimer */}
-        <div className="max-w-2xl mx-auto bg-white/[0.02] border border-[#F2F4F6] p-6 rounded-lg">
-          <h3 className="font-semibold text-gray-200 mb-2">{t.disclaimer}</h3>
-          <p className="text-sm text-[#8B95A1]">{t.disclaimerText}</p>
+        <div className="max-w-2xl mx-auto bg-gray-50 border border-gray-200 p-6 rounded-lg">
+          <h3 className="font-semibold text-gray-800 mb-2">{t.disclaimer}</h3>
+          <p className="text-sm text-gray-600">{t.disclaimerText}</p>
         </div>
       </div>
     </div>
